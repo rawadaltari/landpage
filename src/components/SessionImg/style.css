@@ -1,0 +1,26 @@
+.text-animation{
+    color: hsl(0, 0%, 28%);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: monospace;
+    letter-spacing: 3px;
+    cursor: pointer;
+   
+  }
+  
+  .text-animation span {
+    transition: 0.5s ease-out;
+  }
+  .text-animation:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  .text-animation:hover span:nth-child(1):after {
+    content: "'";
+  }
+  .text-animation:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  .text-animation:hover span {
+    color: #f53939;
+    text-shadow: 0 0 10px #f12828, 0 0 20px #ff0000, 0 0 40px #ff8686;
+  }
